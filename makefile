@@ -12,9 +12,12 @@ all: build
 
 build: build-js
 
-serve: build serve-start
+serve: build serve-start open
 
 stop: serve-stop clean
+
+open:
+	open http://localhost:8080
 
 
 build-js:
